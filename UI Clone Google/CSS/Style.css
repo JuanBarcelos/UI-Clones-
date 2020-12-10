@@ -51,7 +51,7 @@ header{
   text-decoration: none;
   font-weight: bold;
   color: #fbfbfb;
-}
+ }
 #body-main{
   display: flex;
   flex-direction: column;

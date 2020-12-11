@@ -9,8 +9,7 @@ body{
 }
 #viewport{
   width: 100%;
-  position: absolute;
-  
+  position: absolute;  
 }
 header{
   top: 0;
@@ -20,7 +19,8 @@ header{
 }
 .body-header{
   width: 100%;
-  margin-top: 13px;
+  height: 5vh;
+  margin-top: 0;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -40,9 +40,10 @@ header{
 .btn-header{
   width: 105px;
   height: 30px;
-  background-color: #4584F2;;
+  background-color: #4584F2;
+  margin-top: 13px;
   margin-right: 25px;
-  margin-bottom: 6px;
+  margin-bottom: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,34 +53,37 @@ header{
   font-weight: bold;
   color: #fbfbfb;
  }
-
 #body-main{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  width: 100%;
+  height: 90vh;
   margin-left: 0;
   margin-right: 0;
- 
 }
 #body-main strong{
   color: rgb(248, 66, 66);
   font-size: 14px;
 }
+
 #body-main p{
-  margin-top: 1.5rem;
   color: blue;
   font-size: 14px;
+  margin-top: 1.5rem;
 }
-
+.logo{
+  margin-top: -15rem;
+}
 .logo img{
   width: 250px;
+  transition: width 1s;
 }
 #pesquisar{
   display: flex;
   align-items: center;
-  margin-top: 5.5rem;
+  margin-top: 1.5rem;
   border: #cfcfcf solid 1px;
   border-radius: 50px;
 }
@@ -121,8 +125,30 @@ header{
   height: 30px;
  align-items: center;
 }
+
 footer{
+  position: absolute;
+  margin-bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 5vh;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
   background-color: #cfcfcf;
+}
+@media(min-width: 500px){
+  .logo img{
+    width: 450px;
+    transition: width 1s;
+  }
+
+  #pesquisar input{
+    width: 26.5rem;
+    transition: width 1s;
+    height: 2.5rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; 
+  }
 }
